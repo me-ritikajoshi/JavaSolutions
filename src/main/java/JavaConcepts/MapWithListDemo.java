@@ -34,7 +34,7 @@ public class MapWithListDemo {
 //                    highestAge=eachClassStudent.get(i);
 //                }
 //            }
-            System.out.println("Highest Age: "+eachClassStudent.getLast());
+//            System.out.println("Highest Age: "+eachClassStudent.getLast());
 
 //            int lowestAge=eachClassStudent.get(0);
 //            for (int i = 0; i < eachClassStudent.size() ; i++) {
@@ -42,7 +42,7 @@ public class MapWithListDemo {
 //                    lowestAge=eachClassStudent.get(i);
 //                }
 //            }
-            System.out.println("Lowest Age: "+eachClassStudent.getFirst());
+//            System.out.println("Lowest Age: "+eachClassStudent.getFirst());
             System.out.println("Sorted: "+eachClassStudent);
 
         }
