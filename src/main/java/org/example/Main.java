@@ -13,7 +13,6 @@ public class Main {
 
         ec.setName("abc");
         ec.setSalary(12345);
-        ec.setSalary(123456);
 
         name = ec.getName();
         salary = ec.getSalary();
