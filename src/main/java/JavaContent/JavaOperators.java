@@ -2,7 +2,7 @@ package JavaContent;
 
 public class JavaOperators {
     public static void main(String[] args) {
-        //Unary Operator taks one operand & binary operator takes two operands & ternary operator takes three operands
+        //Unary Operator takes one operand & binary operator takes two operands & ternary operator takes three operands
 
         //Unary Arithmetic Operators -> + - ++ --
         int i1 = +1;
