@@ -1,4 +1,4 @@
-package JavaContent;
+package JavaContent.BasicConcepts;
 
 public class DoWhileDemo {
     public static void main(String[] args) {

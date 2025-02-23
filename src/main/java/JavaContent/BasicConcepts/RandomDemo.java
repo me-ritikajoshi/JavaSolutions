@@ -1,4 +1,4 @@
-package JavaContent;
+package JavaContent.BasicConcepts;
 
 import java.util.Random;
 

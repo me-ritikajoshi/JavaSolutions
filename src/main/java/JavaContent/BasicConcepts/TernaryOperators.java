@@ -1,4 +1,4 @@
-package JavaContent;
+package JavaContent.BasicConcepts;
 
 public class TernaryOperators {
     public static void main(String[] args) {

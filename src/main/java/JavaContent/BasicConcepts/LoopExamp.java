@@ -1,4 +1,4 @@
-package JavaContent;
+package JavaContent.BasicConcepts;
 
 public class LoopExamp {
     public static void main(String[] args) {

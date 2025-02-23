@@ -1,4 +1,4 @@
-package JavaContent;
+package JavaContent.BasicConcepts;
 
 public class MethodsDemo {
     public static void main(String[] args) {
