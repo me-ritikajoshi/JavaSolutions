@@ -10,17 +10,26 @@ public class BankAccount {
     private long phoneNumber;
 
     public BankAccount(){
+        this(789654, 500.3,"Default Name", "Default Address", 987621202 );
         System.out.println("Empty constructor called");
     }
 
     public BankAccount(long accountNumber, double balance, String customerName, String email, long phoneNumber){
         System.out.println("Account constructor with parameters called");
 
+//        setAccountNumber(accountNumber);
         this.accountNumber = accountNumber;
         this.balance = balance;
         this.customerName = customerName;
         this.email = email;
         this.phoneNumber = phoneNumber;
+    }
+
+    public BankAccount(String customerName, String email, long phoneNumber) {
+        this(7854268, 8562.5, customerName, email, phoneNumber);
+//        this.customerName = customerName;
+//        this.email = email;
+//        this.phoneNumber = phoneNumber;
     }
 
     public long getAccountNumber() {
