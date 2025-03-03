@@ -13,6 +13,8 @@ public class IfElseCodingExercise {
         System.out.println("Area: " + area(5));
         System.out.println("Area: " + area(5, 8));
         printYearsAndDays(1000000);
+        printEqual(8,8,8);
+        System.out.println("Is cat playing? " +isCatPlaying(true, 10));
     }
 
     public static String checkNumber(int number) {
@@ -119,11 +121,17 @@ public class IfElseCodingExercise {
             System.out.println("Invalid Value");
         } else if (a == b && b == c) {
             System.out.println("All values are equal");
-//        } else if () {
-//
-//        }
+        } else if ((a == b) || (b == c) || (c == a)) {
+            System.out.println("Neither all are equal or different");
+        }else {
+            System.out.println("All are different");
         }
+    }
 
+    public static boolean isCatPlaying(boolean summer, int temperature){
+       if (summer && (temperature >=25 && temperature <=45)){
+           return true;
+        } else return !summer && (temperature >= 25 && temperature <= 35);
     }
 }
 
