@@ -6,8 +6,6 @@ public class DigitSumChallenge {
         System.out.println("The sum of digit in -125 is: " + sumDigits(-125));
         System.out.println("The sum of digit in 4 is: " + sumDigits(4));
         System.out.println("The sum of digit in 32123 is: " + sumDigits(32123));
-
-
     }
 
     public static int sumDigits(int number){
