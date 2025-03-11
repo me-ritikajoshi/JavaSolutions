@@ -9,6 +9,10 @@ public class ControlFlowChallenge {
         System.out.println(isPalindrome(12321));
         System.out.println(sumFirstAndLastDigit(111));
         System.out.println(getEvenDigitSum(123456789));
+        printFactors(6);
+        System.out.println(getGreatestCommonDivisor(12, 30));
+        System.out.println(isPerfectNumber(5));
+//        System.out.println(canPack(1,0,4));
     }
 
     public static void printNumberInWord(int number){
@@ -115,4 +119,64 @@ public class ControlFlowChallenge {
 
         return true;
     }
+
+    public static void printFactors(int num){
+        if (num < 1){
+            System.out.println("Invalid input");
+        }
+        for (int i = 1; i <= num; i++) {
+            if (num % i == 0){
+                System.out.println(i);
+            }
+        }
+    }
+
+    public static int getGreatestCommonDivisor(int num1, int num2){
+        if (num1 < 10 || num2 < 10){
+            return -1;
+        }
+        int gcd = 1;
+        int min = (num1 < num2) ? num1 : num2;
+
+        for (int i = 1; i <= min; i++) {
+            if (num1 % i == 0  && num2 % i == 0){
+                gcd = i;
+            }
+        }
+        return gcd;
+    }
+
+    public static boolean isPerfectNumber(int num){
+        if (num < 1 ){
+            return false;
+        }
+        int sum = 0;
+        for (int i = 1; i < num; i++) {
+            if (num % i == 0){
+                sum += i;
+            }
+        }
+        return num == sum;
+    }
+
+//    public static boolean canPack(int bigCount, int smallCount, int goal){
+//        if (bigCount < 0 || smallCount < 0 || goal < 0){
+//            return false;
+//        }
+//        int totalAmt = bigCount * 5 + smallCount;
+//        boolean result = false;
+//        if (totalAmt >= goal) {
+//            int remaining = goal % totalAmt;
+//            if (smallCount >= remaining) {
+//                result = true;
+//            } else {
+//                if (smallCount >= goal - totalAmt) {
+//                    result = true;
+//                }
+//            }
+//
+//        }
+//
+//        return result;
+//    }
 }
