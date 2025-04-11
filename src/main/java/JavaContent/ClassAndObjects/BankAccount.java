@@ -1,7 +1,5 @@
 package JavaContent.ClassAndObjects;
 
-import java.util.Scanner;
-
 public class BankAccount {
     private long accountNumber;
     private double balance;
