@@ -4,7 +4,7 @@ import JavaContent.ClassAndObjects.StudentPOJO;
 
 public class StudentPojoMain {
     public static void main(String[] args) {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i <= 5; i++) {
             StudentPOJO s = new StudentPOJO("S985" +i,
                     switch (i){
                         case 1-> "mary";
