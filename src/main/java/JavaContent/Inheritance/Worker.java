@@ -6,7 +6,6 @@ public class Worker {
     protected String endDate;
 
     public Worker(){
-
     }
 
     public Worker(String name, String birthDate) {
