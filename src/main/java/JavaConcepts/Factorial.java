@@ -1,12 +1,23 @@
 package JavaConcepts;
 
 public class Factorial {
-    //Write a program that calculates the factorial of a given positive integer.
+    private Factorial() {
+    }
+
+    // Write a program that calculates the factorial of a given positive integer.
+    public static long factorial(int num) {
+        if (num < 0) {
+            throw new IllegalArgumentException("num must be >= 0");
+        }
+        long fact = 1L;
+        for (int i = 2; i <= num; i++) {
+            fact *= i;
+        }
+        return fact;
+    }
+
     public static void main(String[] args) {
-        int fact=1;
-        int num=5;
-        for(int i=1 ; i<=num; i++)
-            fact=fact*i;
-        System.out.println(fact);
+        int num = 5;
+        System.out.println(factorial(num));
     }
 }
